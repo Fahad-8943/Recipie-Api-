@@ -61,9 +61,9 @@ const recipeDetails = async () => {
   });
 };
 
-if (window.location.pathname.includes("index.html")) {
+if (document.getElementById("cards")) {
   cardMaker();
-} else if (window.location.pathname.includes("recipiedetailspage.html")) {
+} else if (document.getElementById("recipieName")) {
   recipeDetails();
 }
 
